@@ -3,6 +3,7 @@
     --azul-claro: #6BD1FF;
     --cinza-escuro: #141414;
     --azul-transparente: rgba(80, 129, 251, 0.08);
+    --branco-transparente: rgba(255, 255, 255, 0.16);
 }
 
 body {
@@ -66,4 +67,41 @@ body {
     color: white;
     font-size: 16px;
     line-height: 24px;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 16px;
+    color: white;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.projeto__titulo {
+    margin-top: 10px;
+}
+
+.input {
+    background-color: var(--branco-transparente);
+    margin: 16px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 0 16px 14px;
+    font-size: 16px;
+
+}
+
+.projeto__descricao--input {
+    height: 80px;
+}
+
+.personalizacao__titulo {
+    margin-top: 10px;
 }

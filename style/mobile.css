@@ -1,0 +1,141 @@
+
+@media screen and (min-width:320px){
+    .container__principal--codigo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .navegacao {
+        display: flex;
+        gap: 2em;
+    }
+
+    .container__background {
+        background-color: var(--azul-claro);
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 8px;
+    }
+    
+    .container__input {
+        background-color: var(--cinza-escuro);
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border-radius: 8px;
+    
+    }
+    
+    .bolinhas{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 1.5em;
+    }
+    
+    .container__input-conteudo {
+        background-color: var(--cinza-escuro);
+        /* border: solid 1px white; */
+        border: 0;
+        color: white;
+        height: 200px;
+    }
+    
+    .btn__highlight {
+        margin: 16px;
+        padding: 16px;
+        background-color: var(--azul-transparente);
+        border: 0;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .projeto {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 16px;
+        color: white;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+    }
+    
+    .projeto__titulo {
+        margin-top: 10px;
+    }
+    
+    .input {
+        background-color: var(--branco-transparente);
+        margin: 16px;
+        border: 0;
+        border-radius: 8px;
+        color: white;
+        padding: 16px 0 16px 14px;
+        font-size: 16px;
+    
+    }
+    
+    .input::placeholder {
+        font-family: var(--fonte-principal);
+    }
+    
+    .projeto__descricao--input {
+        height: 80px;
+    }
+    
+    .personalizacao__titulo {
+        margin-top: 10px;
+    }
+
+    
+    
+    .personalizacao__linguagens {
+        margin: 2rem;
+        padding: 1rem;
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        color: black;
+    }
+    
+    .personalizacao__cores {
+        margin: 2rem;
+        height: 54px;
+        border-radius: 8px;
+        border: 0;
+    
+    }
+    
+    #cor-azul {
+        background-color: var(--azul-claro);
+    
+    }
+    
+    #cores {
+        background-color: var(--azul-claro);
+    }
+    
+    .btn-salvarProjeto {
+        margin: 1rem;
+        padding: 1rem;
+        border: 0;
+        border-radius: 8px;
+        font-size: 1rem;
+        background-color: var(--azul);
+        color: var(--azul-escuro);
+    }
+
+}
+

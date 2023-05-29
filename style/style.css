@@ -1,107 +1,20 @@
+@import url(./tablet.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
 :root {
-    --cor-de-fundo: #051D3B;
+    --azul-escuro: #051D3B;
     --azul-claro: #6BD1FF;
     --cinza-escuro: #141414;
     --azul-transparente: rgba(80, 129, 251, 0.08);
+    --azul: #5081FB;
+    --icone-ativo:rgba(80, 129, 251, 1);
     --branco-transparente: rgba(255, 255, 255, 0.16);
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 body {
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--azul-escuro) ;
+    font-family: var(--fonte-principal);
 }
 
-.container__principal {
-    display: flex;
-    flex-direction: column;
-}
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-.navegacao {
-    display: flex;
-    gap: 2em;
-}
-/* campo de input */
-.container__background {
-    background-color: var(--azul-claro);
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-}
-
-.container__input {
-    background-color: var(--cinza-escuro);
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    border-radius: 8px;
-
-}
-
-.bolinhas{
-    display: flex;
-    gap: 8px;
-    margin-bottom: 1.5em;
-}
-
-.container__input-conteudo {
-    background-color: var(--cinza-escuro);
-    /* border: solid 1px white; */
-    border: 0;
-    color: white;
-    height: 200px;
-}
-
-.btn__highlight {
-    margin: 16px;
-    padding: 16px;
-    background-color: var(--azul-transparente);
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.projeto {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo {
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 16px;
-    color: white;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-}
-
-.projeto__titulo {
-    margin-top: 10px;
-}
-
-.input {
-    background-color: var(--branco-transparente);
-    margin: 16px;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    padding: 16px 0 16px 14px;
-    font-size: 16px;
-
-}
-
-.projeto__descricao--input {
-    height: 80px;
-}
-
-.personalizacao__titulo {
-    margin-top: 10px;
-}

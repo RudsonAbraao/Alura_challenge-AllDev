@@ -6,32 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>All Dev</title>
 </head>
 <body>
     <header class="cabecalho">
         <img src="./img/Logo.svg" alt="logo">
         
+        <input type="search" class="navegacao__pesquisa input" placeholder="Busque por algo">
         <nav class="navegacao">
-            <img src="./img/lupa.svg" alt="pesquisar">
-            <img src="./img/menu.svg" alt="menu" >
+            <img src="./img/lupa.svg" alt="pesquisar" class="navegacao__lupa">
+            <img src="./img/menu.svg" alt="menu" class="btn-menu">
+            <div class="navegacao__perfil">
+                <img src="./img/foto.svg" alt="foto de perfil" srcset="">
+                <h2 class="perfil__nome">Harry</h2>
+            </div>
         </nav>
     </header>
 
     <main class="container__principal">
-        <div class="container__background">
-            <div class="container__input">
-                <ul class="bolinhas">
-                    <li><img src="./img/bolinhas/vermelha.svg" alt=""></li>
-                    <li><img src="./img/bolinhas/amarela.svg" alt=""></li>
-                    <li><img src="./img/bolinhas/verde.svg" alt=""></li>
-                </ul>
-                <textarea name="input-codigo" id="codigo" cols="30" rows="20" class="container__input-conteudo" data-textArea></textarea>
-            </div>
 
+        <div class="menu">
+            <h2 class="menu__titulo">MENU</h2>
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <div class="menu__item-icone">
+                        <img src="./img/icone--codigo.svg" alt="">
+                    </div>
+                    <p class="menu__item--texto">Editor de código</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__item-icone">
+                        <img src="./img/icone--comunidade.svg" alt="">
+                    </div>
+                    <p class="menu__item--texto">Comunidade</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="container__principal--codigo">
+            <div class="container__background">
+                <div class="container__input">
+                    <ul class="bolinhas">
+                        <li><img src="./img/bolinhas/vermelha.svg" alt=""></li>
+                        <li><img src="./img/bolinhas/amarela.svg" alt=""></li>
+                        <li><img src="./img/bolinhas/verde.svg" alt=""></li>
+                    </ul>
+                    <textarea name="input-codigo" id="codigo" cols="30" rows="20" class="container__input-conteudo" data-textArea></textarea>
+                </div>
+                
+            </div>
+            <button class="btn__highlight">Visualizar com o highlight</button>
+            
         </div>
 
-        <button class="btn__highlight">Visualizar com o highlight</button>
 
         <div class="projeto">
             <h2 class="projeto__titulo titulo">SEU PROJETO</h2>
@@ -41,6 +71,22 @@
             <textarea name="descricao" id="" cols="30" rows="3" placeholder="Descrição do seu projeto" class="input"></textarea>
 
             <h2 class="personalizacao__titulo titulo">Personalização</h2>
+
+            <div class="personalizacao__opcoes">
+                <select name="linguagens" id="linguagens" class="personalizacao__linguagens input">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="C++">C++</option>
+                </select>
+    
+                <select name="cores" id="cores" class="personalizacao__cores">
+                    <option value="azul" id="cor-azul"></option>
+                    <option value="vermelho"></option>
+                    <option value="amarelo"></option>
+                </select>
+            </div>
+
+            <button class="btn-salvarProjeto">Salvar projeto</button>
 
         </div>
     </main>

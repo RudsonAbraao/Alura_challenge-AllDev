@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+    .navegacao__pesquisa {
+        display: none;
+    }
+
+    .personalizacao__opcoes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .navegacao__lupa {
+        display: none;
+    }
+    .navegacao__pesquisa {
+        width: 65%;
+    }
+
+    .personalizacao__opcoes {
+        display: flex;
+        justify-content:center;
+    }
+
+    .personalizacao__linguagens {
+        width: 100%;
+    }
+
+    .personalizacao__cores {
+        width: 100%;
+    }
+}

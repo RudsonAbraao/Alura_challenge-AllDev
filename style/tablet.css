@@ -9,24 +9,22 @@
     }
 }
 
-@media screen and (min-width: 768px ){
+@media screen and (min-width: 768px) {
     .navegacao__lupa {
         display: none;
     }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
     .navegacao__pesquisa {
         width: 65%;
     }
 
     .personalizacao__opcoes {
-        display: flex;
-        justify-content:center;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        align-items: center;
     }
 
-    .personalizacao__linguagens {
-        width: 100%;
-    }
-
-    .personalizacao__cores {
-        width: 100%;
-    }
 }

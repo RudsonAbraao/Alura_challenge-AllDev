@@ -2,6 +2,10 @@
     .navegacao__perfil {
         display: none;
     }
+
+    .menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px){
@@ -10,6 +14,10 @@
         grid-template-columns: 25vw 50vw 25vw;
         padding: 0;;
         align-items: center;
+    }
+
+    .cabecalho__logo {
+        margin-left: 32px;
     }
 
     .navegacao__pesquisa {
@@ -30,6 +38,11 @@
 
     .btn-menu{
         display: none;
+    }
+
+    .navegacao {
+        justify-self: end;
+        margin-right: 32px;
     }
 
     .navegacao__perfil {
@@ -63,7 +76,7 @@
 
     .menu__titulo {
         color: white;
-        margin: 10px 0 16px 32px;
+        margin: 16px 0 16px 32px;
         font-size: 12px;
         letter-spacing: 0.4rem;
     }
@@ -76,6 +89,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .projeto {
+        margin-right: 32px;
+    }
+
+    .personalizacao__opcoes {
+        display: flex;
+        flex-direction: column;
     }
 
 

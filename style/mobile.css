@@ -77,7 +77,7 @@
     }
     
     .projeto__titulo {
-        margin-top: 10px;
+        margin-top: 16px;
     }
     
     .input {
@@ -113,15 +113,9 @@
     }
     
     .personalizacao__cores {
-<<<<<<< HEAD
         height: 54px;
         border-radius: 8px;
-=======
-        height: 52px;
->>>>>>> 92d4be92e7275efca9140a59bf267e4e0b02fd5a
         border: 0;
-        border-radius: 8px;
-        margin: 16px;
     
     }
     

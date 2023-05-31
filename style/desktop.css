@@ -12,8 +12,14 @@
         align-items: center;
     }
 
+    .cabecalho__logo {
+        margin: 44px 32px;
+    }
+
     .navegacao__pesquisa {
-        /* width: 50vw; */
+        margin: 0;
+        justify-self: center;
+        width: 100%;
     }
 
     .container__principal {
@@ -30,6 +36,11 @@
 
     .btn-menu{
         display: none;
+    }
+
+    .navegacao {
+        justify-self: end;
+        margin-right: 32px;
     }
 
     .navegacao__perfil {
@@ -77,6 +88,21 @@
         justify-content: center;
         align-items: center;
     }
+
+    .container__background {
+        margin: 0;
+    }
+
+    .projeto {
+        margin: 0 32px 0 16px;
+    }
+
+    .personalizacao__opcoes {
+        display: grid;
+        
+    }
+
+    
 
 
 }

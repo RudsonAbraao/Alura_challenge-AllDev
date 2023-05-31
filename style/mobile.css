@@ -111,10 +111,10 @@
     }
     
     .personalizacao__cores {
-        margin: 2rem;
-        height: 54px;
-        border-radius: 8px;
+        height: 52px;
         border: 0;
+        border-radius: 8px;
+        margin: 16px;
     
     }
     

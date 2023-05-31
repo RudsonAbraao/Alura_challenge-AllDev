@@ -17,11 +17,17 @@
     }
 
     .cabecalho__logo {
+<<<<<<< HEAD
         margin-left: 32px;
+=======
+        margin: 44px 32px;
+>>>>>>> 92d4be92e7275efca9140a59bf267e4e0b02fd5a
     }
 
     .navegacao__pesquisa {
-        /* width: 50vw; */
+        margin: 0;
+        justify-self: center;
+        width: 100%;
     }
 
     .container__principal {
@@ -91,6 +97,7 @@
         align-items: center;
     }
 
+<<<<<<< HEAD
     .projeto {
         margin-right: 32px;
     }
@@ -100,5 +107,22 @@
         flex-direction: column;
     }
 
+=======
+    .container__background {
+        margin: 0;
+    }
+
+    .projeto {
+        margin: 0 32px 0 16px;
+    }
+
+    .personalizacao__opcoes {
+        display: grid;
+        
+    }
+
+    
+
+>>>>>>> 92d4be92e7275efca9140a59bf267e4e0b02fd5a
 
 }

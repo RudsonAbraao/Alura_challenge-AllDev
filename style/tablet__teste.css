@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 32px 32px 40px 32px;
+    }
+
+    .cabecalho {
+        grid-template-columns: 1fr 2.5fr 0.5fr;
+        align-items: center;
+    }
+
+    .navegacao__pesquisa {
+        display: block;
+        height: 56px;
+    }
+
+    .input {
+        background-color: var(--branco-transparente);
+        border: 0;
+        border-radius: 8px;
+        padding: 16px 14px;
+    }
+
+    .lupa {
+        display: none;
+    }
+}

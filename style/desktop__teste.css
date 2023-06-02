@@ -1,0 +1,25 @@
+@media screen and (min-width: 1280px) {
+    .cabecalho {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navegacao {
+        display: grid;
+        justify-content: end;
+    }
+
+    .navegacao__perfil {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .perfil__nome {
+        color: var(--branco);
+    }
+}

@@ -1,0 +1,39 @@
+@media screen and (min-width: 320px){
+    .container {
+        margin: 24px 16px 40px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cabecalho {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+
+    .navegacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navegacao__pesquisa {
+        display: none;
+    }
+
+    .navegacao__item {
+        justify-self: center;
+    }
+
+    .navegacao__perfil {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container__background {
+        background-color: var(--azul-claro);
+    }
+}

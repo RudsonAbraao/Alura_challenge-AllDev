@@ -13,14 +13,13 @@
         height: 56px;
     }
 
-    .input {
-        background-color: var(--branco-transparente);
-        border: 0;
-        border-radius: 8px;
-        padding: 16px 14px;
+    .icone__lupa {
+        display: none;
     }
 
-    .lupa {
-        display: none;
+    .personalizacao__opcoes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
     }
 }

@@ -19,8 +19,8 @@
             <img src="./img/Logo.svg" alt="logo" class="cabecalho__logo">
             <input type="search" class="navegacao__pesquisa input" placeholder="Busque por algo">
             <nav class="navegacao">
-                <img src="./img/lupa.svg" alt="pesquisar" class="navegacao__item lupa">
-                <img src="./img/menu.svg" alt="menu" class="navegacao__item menu">
+                <img src="./img/lupa.svg" alt="pesquisar" class="navegacao__item icone__lupa">
+                <img src="./img/menu.svg" alt="menu" class="navegacao__item icone__menu">
                 <div class="navegacao__perfil">
                     <img src="./img/foto.svg" alt="foto de perfil" srcset="">
                     <h2 class="perfil__nome">Harry</h2>
@@ -67,11 +67,11 @@
             
             <div class="projeto">
                 <h2 class="projeto__titulo titulo">SEU PROJETO</h2>
-                <!-- <textarea name="nomeProjeto" id="nomeProjeto" cols="30" rows="1" class="projeto__titulo--input"></textarea> -->
                 <input type="text" class="projeto__titulo--input input" placeholder="Nome do seu projeto">
-                <!-- <input type="text" class="projeto__descricao--input input" placeholder="Descrição do seu projeto"> -->
-                <textarea name="descricao" id="" cols="30" rows="3" placeholder="Descrição do seu projeto" class="input"></textarea>
+                <textarea name="descricao" id="" cols="30" rows="3" placeholder="Descrição do seu projeto" class="projeto__descricao input"></textarea>
+            </div>
 
+            <div class="personalizacao">
                 <h2 class="personalizacao__titulo titulo">Personalização</h2>
 
                 <div class="personalizacao__opcoes">
@@ -86,9 +86,10 @@
                         <option value="vermelho"></option>
                         <option value="amarelo"></option>
                     </select>
+
                 </div>
                 
-                <button class="btn-salvarProjeto">Salvar projeto</button>
+                <button class="btn__salvarProjeto">Salvar projeto</button>
 
             </div>
         </main>

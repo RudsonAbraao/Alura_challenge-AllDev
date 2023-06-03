@@ -26,4 +26,9 @@
     .menu {
         display: block;
     }
+
+    .container__principal {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
 }

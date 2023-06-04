@@ -1,30 +1,25 @@
-@media screen and (max-width: 768px){
-    .navegacao__pesquisa {
-        display: none;
-    }
-
-    .personalizacao__opcoes {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .navegacao__lupa {
-        display: none;
+    .container {
+        margin: 32px 32px 40px 32px;
     }
-    
-}
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .cabecalho {
+        grid-template-columns: 1fr 2.5fr 0.5fr;
+        align-items: center;
+    }
+
     .navegacao__pesquisa {
-        width: 65%;
+        display: block;
+        height: 56px;
+    }
+
+    .icone__lupa {
+        display: none;
     }
 
     .personalizacao__opcoes {
         display: grid;
-        grid-template-columns: 50vw 50vw;
-        align-items: center;
-    }
+        grid-template-columns: 1fr 1fr;
 
+    }
 }

@@ -1,104 +1,73 @@
-@media screen and (max-width: 1280px) {
-    .navegacao__perfil {
-        display: none;
-    }
-
-    .menu {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     .cabecalho {
-        display: grid;
-        grid-template-columns: 25vw 50vw 25vw;
-        padding: 0;;
-        align-items: center;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .cabecalho__logo {
-        margin-left: 32px;
-    }
-
-    .navegacao__pesquisa {
-        /* width: 50vw; */
-    }
-
-    .container__principal {
-        display: grid;
-        grid-template-areas: "c1 c2 c3";
-        grid-template-columns: 25vw 50vw 25vw;
-        
-        /* justify-content: space-between; */
-    }
-
-    /* .menu {
-        display: flex;
-    } */
-
-    .btn-menu{
+    .icone__menu {
         display: none;
     }
 
     .navegacao {
-        justify-self: end;
-        margin-right: 32px;
+        display: grid;
+        justify-content: end;
     }
 
     .navegacao__perfil {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 8px;
         align-items: center;
-        gap: 10px;
-        margin: 0 1rem;
     }
 
     .perfil__nome {
-        color: white;
-        font-size: 16px;
+        color: var(--branco);
+    }
+
+    .menu {
+        display: block;
+        margin-top: 40px;
     }
 
     .menu__lista {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 16px;
+        margin-top: 16px;
     }
 
     .menu__item {
         display: flex;
+        gap: 16px;
         align-items: center;
-        gap: 10px;
-        margin-left: 32px;
-        color: white;
-
-        align-self: flex-start;
-    }
-
-    .menu__titulo {
-        color: white;
-        margin: 16px 0 16px 32px;
-        font-size: 12px;
-        letter-spacing: 0.4rem;
     }
 
     .menu__item-icone {
-        height: 48px;
-        width: 48px;
+        background-color: var(--azul);
         border-radius: 16px;
-        background-color: var(--icone-ativo);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 48px;
+        height: 48px;
+        padding: 16px 14px;
     }
 
-    .projeto {
-        margin-right: 32px;
+    .menu__item--texto {
+        font-size: 18px;
+        color: var(--branco);
+    }
+
+    .container__principal {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .container__direito {
+        margin-left: 40px;
+    }
+
+    .projeto__descricao {
+        width: 100%;
     }
 
     .personalizacao__opcoes {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
-
-
 }

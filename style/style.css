@@ -1,9 +1,9 @@
 /* @import url(./tablet.css);
 @import url(./mobile.css);
 @import url(./desktop.css); */
-@import url(./mobile__teste.css);
-@import url(./tablet__teste.css);
-@import url(./desktop__teste.css);
+@import url(./mobile.css);
+@import url(./tablet.css);
+@import url(./desktop.css);
 :root {
     --azul-escuro: #051D3B;
     --azul-claro: #6BD1FF;

@@ -71,10 +71,10 @@
 
     .preview {
         display: block;
-        margin-top: 24px;
+        /* margin-top: 24px; */
         color: var(--branco);
         min-height: 30vh;
-        padding: 16px;
+        /* padding: 16px; */
     }
 
     .preview:focus {

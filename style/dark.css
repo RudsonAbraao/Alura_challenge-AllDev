@@ -14,7 +14,8 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: transparent;
+  background:  #282a36;
+  border-radius: 8px;
 }
 
 .hljs-built_in,

@@ -23,6 +23,10 @@
         color: var(--branco);
     }
 
+    .foto__perfil {
+        width: 32px;
+    }
+
     .menu {
         display: block;
         margin-top: 40px;
@@ -47,6 +51,15 @@
         width: 48px;
         height: 48px;
         padding: 16px 14px;
+    }
+
+    .comunidade {
+        opacity: 0.4;
+    }
+
+    .comunidade:hover {
+        opacity: 1;
+        cursor: pointer;
     }
 
     .menu__item--texto {

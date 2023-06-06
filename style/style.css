@@ -10,8 +10,10 @@
     --cinza-escuro: #141414;
     --azul-transparente: rgba(80, 129, 251, 0.08);
     --azul: #5081FB;
+    --azul-hover: rgba(123, 164, 252, 1);
     --icone-ativo:rgba(80, 129, 251, 1);
     --branco-transparente: rgba(255, 255, 255, 0.16);
+    --branco-transparente-hover: rgba(255, 255, 255, 0.24);
     --fonte-principal: 'Inter', sans-serif;
     --branco: #FFF;
 }

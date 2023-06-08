@@ -75,7 +75,7 @@
         color: var(--branco);
         min-height: 30vh;
         white-space: pre-wrap;
-        /* padding: 16px; */
+        padding: 16px;
     }
 
 

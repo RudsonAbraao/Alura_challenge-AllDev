@@ -19,6 +19,11 @@
         align-items: center;
     }
 
+    .link__perfil{
+        text-decoration: none;
+
+    }
+
     .perfil__nome {
         color: var(--branco);
     }

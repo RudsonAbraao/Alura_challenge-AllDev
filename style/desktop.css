@@ -1,4 +1,8 @@
 @media screen and (min-width: 1280px) {
+    .menu-mobile {
+        display: none;
+    }
+
     .cabecalho {
         grid-template-columns: 1fr 2fr 1fr;
     }

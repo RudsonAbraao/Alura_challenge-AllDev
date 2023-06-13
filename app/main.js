@@ -1,8 +1,12 @@
 const linguagem = document.querySelector('.personalizacao__linguagens');
 const areaDoCodigo =  document.querySelector('.codigo');
 const botao = document.querySelector('#btnHighlight');
-console.log(areaDoCodigo.innerText);
-console.log(areaDoCodigo.innerHTML);
+
+const inputCor = document.getElementById('corDeFundo');
+const corDeFundo = document.querySelector('.container__background');
+
+const btnMenu = document.querySelector('.icone__menu');
+
 
 function aplicaHighlight () {
     const codigo = areaDoCodigo.innerText;
@@ -11,6 +15,22 @@ function aplicaHighlight () {
     hljs.highlightElement(areaDoCodigo.querySelector('code'))
 };
 
-botao.addEventListener('click', ()=> {
-    aplicaHighlight()
+function mudarCor(){
+    let cor = inputCor.value;
+    corDeFundo.style.backgroundColor = cor;
+}
+
+inputCor.addEventListener('input', mudarCor);
+
+btnMenu.addEventListener('click', ()=> {
+    console.log('menu clicado');
 })
+
+
+
+
+
+export default linguagem;
+
+
+

@@ -15,17 +15,19 @@
 
 
     .navegacao {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         align-items: center;
+        justify-content: end;
+    }
+
+    .navegacao__item {
+        justify-self: end;
     }
 
     .navegacao__pesquisa {
         display: none;
-    }
-
-    .navegacao__item {
-        justify-self: center;
     }
 
     .navegacao__perfil {
@@ -138,6 +140,7 @@
 
     .personalizacao__linguagens  option {
         background-color: var(--cinza-escuro);
+        font-family: var(--fonte-principal);
     }
 
     .personalizacao__linguagens:hover{
@@ -147,6 +150,7 @@
     .personalizacao__cores {
         width: 100%;
         height: 56px;
+        border: solid 1px var(--branco);
         border-radius: 8px;
         height: 56px;
         background-color: transparent;

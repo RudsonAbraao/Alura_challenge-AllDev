@@ -13,7 +13,6 @@
         grid-template-columns: 2fr 1fr;
     }
 
-
     .navegacao {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -34,9 +33,61 @@
         display: none;
     }
 
-    .menu {
-        display: none;
+    .icone__menu {
+        background: url(../img/menu.svg) no-repeat ;
+        width: 20px;
+        height: 20px;
+        transition: 1s;
     }
+
+    .menu__aberto {
+        background: url(../img/menu-aberto.svg) no-repeat ;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu__item {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .menu__item-icone {
+        background-color: var(--azul);
+        border-radius: 16px;
+        width: 48px;
+        height: 48px;
+        padding: 16px 14px;
+    }
+
+    .menu__perfil {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--branco);
+        padding: 12px;
+        margin-top: 24px;
+    }
+
+    .foto__perfil {
+        width: 32px;
+    }
+
+    .comunidade {
+        opacity: 0.4;
+    }
+
+    .comunidade:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .menu__item--texto {
+        font-size: 18px;
+        color: var(--branco);
+    }
+
+ 
 
     .container__codigo {
         margin-top: 40px;
@@ -61,15 +112,6 @@
         display: flex;
         gap: 8px;
     }
-
-    /* .container__input-conteudo {
-        margin-top: 24px;
-        background-color: var(--cinza-escuro);
-        border: 0;
-        color: var(--branco);
-        width: 100%;
-        max-width: 100%;
-    } */
 
     .preview {
         display: block;
@@ -181,5 +223,41 @@
 
     .highlight {
         background-color: aqua;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1280px){
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -100vh;
+        height: 80vh;
+        width: 254px;
+        background-color: var(--fundo-menu);
+        padding: 24px;
+        border-radius: 8px;
+        transition: 1s;
+    }
+
+    .menu__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--branco-transparente);
+    }
+
+    .menu__titulo {
+        display: none;
+    }
+
+    .ativo {
+        top: 70px;
     }
 }

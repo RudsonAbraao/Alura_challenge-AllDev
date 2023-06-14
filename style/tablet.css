@@ -17,9 +17,17 @@
         display: none;
     }
 
+    .menu {
+        top: -100vh;
+    }
+
     .personalizacao__opcoes {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+    }
+
+    .ativo {
+        top: 95px;
     }
 }

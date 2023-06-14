@@ -13,28 +13,22 @@
 
     .navegacao {
         display: grid;
+        grid-template-columns: 1fr;
         justify-content: end;
     }
 
     .navegacao__perfil {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        justify-content: end;
         gap: 8px;
         align-items: center;
     }
 
-    .link__perfil{
-        text-decoration: none;
-
-    }
 
     .perfil__nome {
         color: var(--branco);
     }
 
-    .foto__perfil {
-        width: 32px;
-    }
 
     .menu {
         display: block;
@@ -48,32 +42,8 @@
         margin-top: 16px;
     }
 
-    .menu__item {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .menu__item-icone {
-        background-color: var(--azul);
-        border-radius: 16px;
-        width: 48px;
-        height: 48px;
-        padding: 16px 14px;
-    }
-
-    .comunidade {
-        opacity: 0.4;
-    }
-
-    .comunidade:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    .menu__item--texto {
-        font-size: 18px;
-        color: var(--branco);
+    .menu__perfil {
+        display: none;
     }
 
     .container__principal {

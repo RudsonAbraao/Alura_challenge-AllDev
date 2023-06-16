@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./highlight/styles/default.min.css">
     <title>All Dev</title>
 </head>
+
 <body>
 
     <div class="container">
@@ -23,12 +25,14 @@
             <nav class="navegacao">
                 <img src="./img/lupa.svg" alt="pesquisar" class="navegacao__item icone__lupa">
                 <div class="navegacao__item icone__menu"></div>
-                <a href="https://github.com/RudsonAbraao" class="link" alt="https://github.com/RudsonAbraao">
-                    <div class="navegacao__perfil">
+                <div class="navegacao__perfil">
+                    <a href="https://github.com/RudsonAbraao" class="link perfil__link"
+                        alt="https://github.com/RudsonAbraao">
                         <img src="./img/foto.png" alt="foto de perfil" srcset="" class="foto__perfil">
                         <h2 class="perfil__nome">Rudson A.</h2>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
             </nav>
         </header>
 
@@ -56,12 +60,12 @@
                 <a href="https://github.com/RudsonAbraao" class="link">
                     <div class="menu__perfil">
                         <img src="./img/foto.png" alt="foto de perfil" srcset="" class="foto__perfil">
-                            <h2 class="perfil__nome">Rudson A.</h2>
+                        <h2 class="perfil__nome">Rudson A.</h2>
                     </div>
-                    
+
                 </a>
             </div>
-            
+
             <div class="container__codigo">
                 <div class="container__background">
                     <div class="container__input">
@@ -77,35 +81,37 @@
 
 
                     </div>
-                    
+
                 </div>
                 <button class="btn__highlight" id="btnHighlight">Visualizar com o highlight</button>
-                
+
             </div>
-            
+
             <div class="container__direito">
                 <div class="projeto">
                     <h2 class="projeto__titulo titulo">SEU PROJETO</h2>
                     <input type="text" class="projeto__titulo--input input" placeholder="Nome do seu projeto">
-                    <textarea name="descricao" id="" cols="30" rows="3" placeholder="Descrição do seu projeto" class="projeto__descricao input"></textarea>
+                    <textarea name="descricao" id="" cols="30" rows="3" placeholder="Descrição do seu projeto"
+                        class="projeto__descricao input"></textarea>
                 </div>
-    
+
                 <div class="personalizacao">
                     <h2 class="personalizacao__titulo titulo">Personalização</h2>
-    
+
                     <div class="personalizacao__opcoes">
                         <select name="linguagens" id="linguagens" class="personalizacao__linguagens input">
                             <option value="JavaScript">JavaScript</option>
                             <option value="css">Css</option>
                             <option value="html">Html</option>
                         </select>
-            
-                        <input type="color" name="corDeFundo" id="corDeFundo" class="personalizacao__cores" value="#6BD1FF">
-    
+
+                        <input type="color" name="corDeFundo" id="corDeFundo" class="personalizacao__cores"
+                            value="#6BD1FF">
+
                     </div>
-                    
+
                     <button class="btn__salvarProjeto">Salvar projeto</button>
-    
+
                 </div>
             </div>
         </main>
@@ -119,4 +125,5 @@
     <!-- <script src="./app/redirecionamento.js"></script> -->
 
 </body>
+
 </html>

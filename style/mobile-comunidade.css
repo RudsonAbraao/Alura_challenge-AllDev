@@ -59,5 +59,14 @@
         width: 24px;
     }
     
+    .editor {
+        opacity: 0.6;
+    }
+    .editor:hover {
+        opacity: 1;
+    }
     
+    .preview {
+        white-space: pre-wrap;
+    }
 }

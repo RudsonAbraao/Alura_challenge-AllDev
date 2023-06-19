@@ -1,17 +1,21 @@
 const areaProjetos = document.getElementById('projetos');
 const projetos = JSON.parse(localStorage.getItem("projetos")) || [];
 const codigos = document.querySelectorAll('.codgio');
-console.log(projetos);
-console.log(areaProjetos.innerHTML);
+
 
 projetos.forEach(projeto => {
     criaProjeto(projeto)
 });
 
-
+const listaProjetos = document.querySelectorAll('.container__codigo-area')
+console.log(listaProjetos.length);
+if(listaProjetos.length === 0){
+    console.log('não há projetos');
+    areaProjetos.innerHTML = `<h2 class = "mensagem">Ainda não há projetos criados!</h2>`
+}
 function criaProjeto (projeto) {
-    console.log();
-    areaProjetos.innerHTML += `<div class="container__codigo-area">
+
+    areaProjetos.innerHTML += `<li class="container__codigo-area">
     <div class="container__background" style = "background-color: ${projeto.cor}">
         <div class="container__input">
             <ul class="bolinhas">
@@ -20,8 +24,8 @@ function criaProjeto (projeto) {
                 <li><img src="./img/bolinhas/verde.svg" alt=""></li>
             </ul>
             <div class="codigo">
-            <code class = "preview hljs ${projeto.linguagem}">
-                ${projeto.codigo}
+            <code class = "preview hljs ${projeto.linguagem}"><xmp>
+                ${projeto.codigo}</xmp>
             </code> 
             </div>
 
@@ -54,7 +58,15 @@ function criaProjeto (projeto) {
         </div>
     </div>
     
-</div>`
+</li>`
+}
+
+function tiraEspaço () {
+    const textos = document.querySelectorAll('.preview');
+    textos.forEach(texto => {
+        texto.textContent = texto.textContent.replace(/^\s+/, "");
+        
+    });
 }
 
 function highlightAll(){
@@ -64,6 +76,8 @@ function highlightAll(){
         hljs.highlightElement(codigo)
     });
 }
+
+tiraEspaço();
 
 highlightAll();
 

@@ -1,126 +1,81 @@
-/*!
-  Theme: StackOverflow Dark
-  Description: Dark theme as used on stackoverflow.com
-  Author: stackoverflow.com
-  Maintainer: @Hirse
-  Website: https://github.com/StackExchange/Stacks
-  License: MIT
-  Updated: 2021-05-15
+/* Dracula Theme v1.2.5
+ *
+ * https://github.com/dracula/highlightjs
+ *
+ * Copyright 2016-present, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ * @author Denis Ciccale <dciccale@gmail.com>
+ * @author Zeno Rocha <hi@zenorocha.com>
+ */
 
-  Updated for @stackoverflow/stacks v0.64.0
-  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
-  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
-*/
-
-.hljs {
-  /* var(--highlight-color) */
-  color: #ffffff;
-  /* var(--highlight-bg) */
-  background: transparent;
+ .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #282a36;
 }
 
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-link {
+  color: #8be9fd;
+}
+
+.hljs-keyword {
+  color: #ff79c6;
+}
+
+.hljs,
 .hljs-subst {
-  /* var(--highlight-color) */
-  color: #ffffff;
+  color: #f8f8f2;
 }
 
-.hljs-comment {
-  /* var(--highlight-comment) */
-  color: #999999;
+.hljs-title,
+.hljs-attr,
+.hljs-meta-keyword {
+  font-style: italic;
+  color: #50fa7b;
+}
+
+.hljs-string,
+.hljs-meta,
+.hljs-name,
+.hljs-type,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #f1fa8c;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+  color: #6272a4;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
-.hljs-meta .hljs-keyword,
-.hljs-doctag,
-.hljs-section {
-  /* var(--highlight-keyword) */
-  color: #88aece;
-}
-
-.hljs-attr {
-  /* var(--highlight-attribute); */
-  color: #88aece;
-}
-
-.hljs-attribute {
-  /* var(--highlight-symbol) */
-  color: #c59bc1;
-}
-
-.hljs-name,
-.hljs-type,
-.hljs-number,
-.hljs-selector-id,
-.hljs-quote,
-.hljs-template-tag {
-  /* var(--highlight-namespace) */
-  color: #f08d49;
-}
-
-.hljs-selector-class {
-  /* var(--highlight-keyword) */
-  color: #88aece;
-}
-
-.hljs-string,
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr {
-  /* var(--highlight-variable) */
-  color: #b5bd68;
-}
-
-.hljs-meta,
-.hljs-selector-pseudo {
-  /* var(--highlight-keyword) */
-  color: #88aece;
-}
-
-.hljs-built_in,
+.hljs-literal,
 .hljs-title,
-.hljs-literal {
-  /* var(--highlight-literal) */
-  color: #f08d49;
-}
-
-.hljs-bullet,
-.hljs-code {
-  /* var(--highlight-punctuation) */
-  color: #cccccc;
-}
-
-.hljs-meta .hljs-string {
-  /* var(--highlight-variable) */
-  color: #b5bd68;
-}
-
-.hljs-deletion {
-  /* var(--highlight-deletion) */
-  color: #de7176;
-}
-
-.hljs-addition {
-  /* var(--highlight-addition) */
-  color: #76c490;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
 .hljs-strong {
   font-weight: bold;
 }
 
-.hljs-formula,
-.hljs-operator,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
-.hljs-tag {
-  /* purposely ignored */
+.hljs-literal,
+.hljs-number {
+  color: #bd93f9;
+}
+
+.hljs-emphasis {
+  font-style: italic;
 }

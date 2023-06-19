@@ -20,7 +20,21 @@
         max-height: 700px;
     }
 
-    
+    .container__input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btnEditor {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        align-self: end;
+    }
+
+    #linguagem {
+        display: none;
+    }
     
     .apresentacao-projeto {
         color: var(--branco);

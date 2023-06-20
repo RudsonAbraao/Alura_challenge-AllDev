@@ -1,14 +1,15 @@
 const botoes = document.querySelectorAll('#btnEditor');
 
-botoes.forEach(codigo => {
-    codigo.addEventListener('click', capturaPai)
+botoes.forEach(botao => {
+    botao.addEventListener('click', capturaPai)
 });
 
 function capturaPai (e){
-    let botao = e.target;
-    let input = botao.parentNode;
-    let back = input.parentNode;
-    let codigoArea = back.parentNode;
+    console.log(e.target.parentNode.parentNode.parentNode.parentNode);
+    // let botao = e.target;
+    // let input = botao.parentNode;
+    // let back = input.parentNode;
+    let codigoArea = e.target.parentNode.parentNode.parentNode.parentNode;
 
     let codigo = codigoArea.querySelector('code').innerText;
     let nome = codigoArea.querySelector('.apresentacao__titulo').innerText;

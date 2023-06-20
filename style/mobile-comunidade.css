@@ -30,6 +30,7 @@
         height: 20px;
         background-color: white;
         align-self: end;
+        border-radius: 3px;
     }
 
     #linguagem {

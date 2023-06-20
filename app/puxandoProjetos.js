@@ -23,7 +23,9 @@ function criaProjeto (projeto) {
                 <li><img src="./img/bolinhas/amarela.svg" alt=""></li>
                 <li><img src="./img/bolinhas/verde.svg" alt=""></li>
             </ul>
-            <div id = "btnEditor"></div>
+            <div id = "btnEditor">
+            <img src="../img/editor.svg" id = "btnEditor"></img>
+            </div>
             <button id = "linguagem" value= "${projeto.linguagem}"></button>
             <div class="codigo">
             <code class = "preview hljs ${projeto.linguagem}"><xmp>

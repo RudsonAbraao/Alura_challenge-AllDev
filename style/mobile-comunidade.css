@@ -33,6 +33,15 @@
         border-radius: 3px;
     }
 
+    #btnEditor:hover {
+        cursor: pointer;
+    }
+
+    .editar-icone {
+        width: 20px;
+        height: 20px;
+    }
+
     #linguagem {
         display: none;
     }

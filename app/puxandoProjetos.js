@@ -24,7 +24,7 @@ function criaProjeto (projeto) {
                 <li><img src="./img/bolinhas/verde.svg" alt=""></li>
             </ul>
             <div id = "btnEditor">
-            <img src="../img/editor.svg" id = "btnEditor"></img>
+            <img src="../img/editor.svg" class = "editar-icone"></img>
             </div>
             <button id = "linguagem" value= "${projeto.linguagem}"></button>
             <div class="codigo">
@@ -75,7 +75,6 @@ function tiraEspaço () {
 
 function highlightAll(){
     const codigos = document.querySelectorAll('.preview')
-    console.log(codigos);
     codigos.forEach(codigo => {
         hljs.highlightElement(codigo)
     });

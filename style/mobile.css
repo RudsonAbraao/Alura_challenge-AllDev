@@ -96,6 +96,10 @@
         gap: 32px;
     }
 
+    #cor {
+        display: none;
+    }
+
     .container__background {
         background-color: var(--azul-claro);
         padding: 32px;

@@ -19,7 +19,11 @@ function aplicaHighlight() {
 
 function mudarCor() {
     let cor = inputCor.value;
+    let dadoCor = document.getElementById('cor');
     corDeFundo.style.backgroundColor = cor;
+    dadoCor.value = cor;
+    localStorage.setItem('cor', JSON.stringify(cor));
+    console.log(dadoCor);
 }
 
 inputCor.addEventListener('input', mudarCor);

@@ -17,6 +17,7 @@ function criaProjeto (projeto) {
 
     areaProjetos.innerHTML += `<li class="container__codigo-area">
     <div class="container__background" style = "background-color: ${projeto.cor}">
+    <button id="cor" value="${projeto.cor}"></button>
         <div class="container__input">
             <ul class="bolinhas">
                 <li><img src="./img/bolinhas/vermelha.svg" alt=""></li>

@@ -1,6 +1,6 @@
 const botoes = document.querySelectorAll('#btnEditor');
 const btnEditor = document.querySelector('.editor');
-console.log(btnEditor);
+
 
 btnEditor.addEventListener('click', ()=> {
     const zerarDados = {
@@ -16,15 +16,16 @@ btnEditor.addEventListener('click', ()=> {
 })
 
 botoes.forEach(botao => {
-    botao.addEventListener('click', capturaPai)
+    botao.addEventListener('click', capturaDados)
 });
 
-function capturaPai (e){
+function capturaDados (e){
     const codigoArea = e.target.parentNode.parentNode.parentNode.parentNode;
     let codigo = codigoArea.querySelector('code').innerText;
     let nome = codigoArea.querySelector('.apresentacao__titulo').innerText;
     let descricao = codigoArea.querySelector('.apresentacao__descricao').innerText;
-    let cor = codigoArea.querySelector('.container__background').style.backgroundColor
+    let cor = codigoArea.querySelector('#cor').value;
+    console.log(cor.value);
     let linguagem = codigoArea.querySelector('#linguagem').value
     // console.log(codigo);
     // console.log(nome);
@@ -41,5 +42,6 @@ function capturaPai (e){
     }
 
     localStorage.setItem("edicao", JSON.stringify(dadosCodigo));
+    window.location.href = "../Editor.html"
     console.log(dadosCodigo);
 }

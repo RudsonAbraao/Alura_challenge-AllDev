@@ -1,9 +1,12 @@
 const containerPrincipal = document.querySelector('.container__principal');
 const dados = JSON.parse(localStorage.getItem("edicao"));
 
-console.log();
 
-containerPrincipal.innerHTML = `
+console.log();
+criaEdicao();
+
+function criaEdicao () {
+    containerPrincipal.innerHTML = `
         <div class="menu">
                 <h2 class="menu__titulo titulo">MENU</h2>
                 <ul class="menu__lista">
@@ -42,7 +45,7 @@ containerPrincipal.innerHTML = `
                             <li><img src="./img/bolinhas/verde.svg" alt=""></li>
                         </ul>
                         <div class="codigo">
-                            <code contenteditable="true" class="preview hljs">${dados.codigo}
+                            <code contenteditable="true" class="preview hljs"><xmp>${dados.codigo}</xmp>
                             </code>
                         </div>
 
@@ -69,7 +72,7 @@ containerPrincipal.innerHTML = `
                         <select name="linguagens" id="linguagens" class="personalizacao__linguagens input"   >
                             <option value="JavaScript" id="linguagemItem" >JavaScript</option>
                             <option value="css" id="linguagemItem">Css</option>
-                            <option value="html" id="linguagemItem" se>Html</option>
+                            <option value="html" id="linguagemItem">Html</option>
                         </select>
 
                         <input type="color" name="corDeFundo" id="corDeFundo" class="personalizacao__cores" value = "${dados.cor}">
@@ -81,3 +84,18 @@ containerPrincipal.innerHTML = `
             </div>
         </div>
 `
+selecionaLinguagem();
+
+}
+
+function selecionaLinguagem (){
+    const opcoes = document.querySelectorAll('#linguagemItem');
+    const opcoesConvertida = Array.from(opcoes);
+    const linguagem = dados.linguagem;
+    console.log(linguagem);
+    console.log(opcoesConvertida);
+    const linguagemSelecionada = opcoesConvertida.find(element => element.value === dados.linguagem);
+    linguagemSelecionada.setAttribute('selected', '')
+    console.log(linguagemSelecionada);
+}
+

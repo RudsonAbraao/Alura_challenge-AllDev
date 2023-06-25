@@ -10,10 +10,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .container__codigo-area:hover {
+    /* .container__codigo-area:hover {
         opacity: 0.6;
         cursor: pointer;
-    }
+    } */
 
 
 

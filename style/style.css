@@ -25,3 +25,7 @@ body {
     background-color: var(--azul-escuro);
     font-family: var(--fonte-principal);
 }
+
+.invisivel {
+    display: none;
+}

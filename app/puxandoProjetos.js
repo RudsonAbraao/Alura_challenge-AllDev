@@ -1,6 +1,7 @@
 const areaProjetos = document.getElementById('projetos');
 const projetos = JSON.parse(localStorage.getItem("projetos")) || [];
-const codigos = document.querySelectorAll('.codgio');
+// const codigos = document.querySelectorAll('.codgio');
+// console.log(codigos);
 
 
 projetos.forEach(projeto => {
@@ -24,12 +25,17 @@ function criaProjeto (projeto) {
                 <li><img src="./img/bolinhas/amarela.svg" alt=""></li>
                 <li><img src="./img/bolinhas/verde.svg" alt=""></li>
             </ul>
-            <div id = "btnEditor">
-            <img src="../img/editor.svg" class = "editar-icone"></img>
+            <div class= "botoes">
+                <div id = "btnExcluir">
+                <img src="../img/icone-excluir.svg" class = "excluir-icone"></img>
+                </div>
+                <div id = "btnEditor">
+                <img src="../img/editor.svg" class = "editar-icone"></img>
+                </div>
             </div>
             <button id = "linguagem" value= "${projeto.linguagem}"></button>
             <div class="codigo">
-            <code class = "preview hljs ${projeto.linguagem}"><xmp>
+            <code class = "preview hljs ${projeto.linguagem}" data-id="${projeto.id}"><xmp>
                 ${projeto.codigo}</xmp>
             </code> 
             </div>

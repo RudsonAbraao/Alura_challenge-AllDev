@@ -23,6 +23,31 @@
     .container__input {
         display: flex;
         flex-direction: column;
+        gap: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 5px;
+        justify-content: end;
+    }
+
+    #btnExcluir {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        align-self: end;
+        border-radius: 3px;
+    }
+
+    #btnExcluir:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
+    .excluir-icone {
+        width: 20px;
+        height: 20px;
     }
 
     #btnEditor {
@@ -35,6 +60,7 @@
 
     #btnEditor:hover {
         cursor: pointer;
+        opacity: 0.6;
     }
 
     .editar-icone {
@@ -101,5 +127,7 @@
     
     .preview {
         white-space: pre-wrap;
+        max-height: 420px;
+        height: 420px;
     }
 }

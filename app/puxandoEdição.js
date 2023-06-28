@@ -16,7 +16,7 @@ function criaEdicao () {
                         </div>
                         <p class="menu__item--texto">Editor de código</p>
                     </li>
-                    <a href="./Index.html" class="link">
+                    <a href="./index.html" class="link">
                         <li class="menu__item comunidade">
                             <div class="menu__item-icone">
                                 <img src="./img/icone--comunidade.svg" alt="">
